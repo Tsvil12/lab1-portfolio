@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио PAVEL</title>
+    <!-- Подключаем наш файл со стилями -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Подключаем иконки Font Awesome (для соцсетей) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Подключаем шрифт с Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER (Шапка сайта с навигацией) -->
+    <header class="header">
+        <div class="container">
+            <!-- Логотип или имя в левом углу -->
+            <a href="#" class="logo">Павел</a>
+            <!-- Навигационное меню -->
+            <nav class="nav">
+                <!-- Ссылки на якоря (секции) этой же страницы -->
+                <a href="#about" class="nav-link">Обо мне</a>
+                <a href="#skills" class="nav-link">Навыки</a>
+                <a href="#portfolio" class="nav-link">Портфолио</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+            <!-- Иконка "бургер" для мобильных устройств (появится позже) -->
+            <button class="nav-toggle" aria-label="Открыть меню">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION: HERO (Главный баннер, можно совместить с About) -->
+        <section class="section hero" id="about">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Привет, я <span class="highlight">Паша   </span></h1>
+                    <p class="hero-subtitle">Студент, немного лентяй</p>
+                    <p class="hero-text">Я учусь на 3 курсе в КемГУ </p>
+                    <a href="#portfolio" class="btn">Смотреть работы</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Заглушка для фото. ЗАМЕНИ src на путь к СВОЕЙ фотографии в папке images -->
+                    <img src="images/avatar-placeholder.jpg" alt="Фото [Павел]">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: SKILLS (Навыки) -->
+        <section class="section skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills-grid">
+                    <!-- Карточка навыка 1 -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-train"></i>
+                        </div>
+                        <h3 class="skill-title">РЖД</h3>
+                        <p class="skill-desc">Работник РЖД, проводник пассажирского вагона.</p>
+                        <div class="skill-level">
+                            <div class="level-bar" style="width: 90%;"></div>
+                        </div>
+                        <span class="level-text">90%</span>
+                    </div>
+                    <!-- Карточка навыка 2 -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-basketball"></i>
+                        </div>
+                        <h3 class="skill-title">Баскетболист</h3>
+                        <p class="skill-desc">Занимаюсь спортом.</p>
+                        <div class="skill-level">
+                            <div class="level-bar" style="width: 85%;"></div>
+                        </div>
+                        <span class="level-text">65%</span>
+                    </div>
+                    <!-- Карточка навыка 3 -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3 class="skill-title">Dota 2</h3>
+                        <p class="skill-desc">Верный Support.</p>
+                        <div class="skill-level">
+                            <div class="level-bar" style="width: 60%;"></div>
+                        </div>
+                        <span class="level-text">66%</span>
+                    </div>
+                    <!-- Карточка навыка 4 -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Code</h3>
+                        <p class="skill-desc">Что-то понимаю в программировании.</p>
+                        <div class="skill-level">
+                            <div class="level-bar" style="width: 75%;"></div>
+                        </div>
+                        <span class="level-text">45%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Мои достижения</h2>
+                <div class="portfolio-grid">
+                    <!-- Карточка работы 1 -->
+                    <article class="portfolio-card">
+                        <img src="images/sparta.jpg" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">СОП "Сибисрский Финист"</h3>
+                            <p class="portfolio-desc">Добился определенных успехов в отрядной деятельности проводников России и продолжаю расти.</p>
+                            <a href="#" class="portfolio-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Карточка работы 2 -->
+                    <article class="portfolio-card">
+                        <img src="images/bball.jpg" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Баскетболист студенческий отрядов КемГУ</h3>
+                            <p class="portfolio-desc">Достойно выступил на соревнованиях.</p>
+                            <a href="#" class="portfolio-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- Карточка работы 3 -->
+                    <article class="portfolio-card">
+                        <img src="Images/outfit.jpg" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Круто одеваюсь</h3>
+                            <p class="portfolio-desc">Зацените аутфит выше.</p>
+                            <a href="#" class="portfolio-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CONTACTS (Контакты) -->
+        <section class="section contacts" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь со мной</h2>
+                <div class="contacts-wrapper">
+                    <!-- Контактная информация -->
+                    <div class="contact-info">
+                        <p><i class="fa-brands fa-telegram"></i> @gazvpolgazvpol</p>
+                        <p><i class="fas fa-envelope"></i> pachacha123a@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +7 (961) 725-58-57</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Кемерово, Россия</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; <span id="currentYear"></span> Павел. Все права защищены.</p>
+            <p>Студент группы ФИТ-231</p>
+    </footer>
+
+    <!-- Небольшой скрипт для подстановки текущего года в копирайт -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    <!-- Подключаем наш JS для мобильного меню -->
+    <script src="js/script.js"></script>
+</body>
+</html>
